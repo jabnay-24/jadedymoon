@@ -78,40 +78,23 @@ h2 {
     grid-template-rows: 2fr 2fr 2fr;
     text-align: center;
     padding: 1em;
+    transition: .5s;
 }
-
 
 .skills .card:hover {
-    transform: scale(1.01);
+    transform: scale(1.1);
+    border: 1px solid #e8dfdf;
     cursor: pointer;
-    border: 2px solid #e8dfdf;
-    transition: .4s;
+    transition: .5s;
 }
+
 
 .card h4 {
     text-align: center;
     color: #00abf0;
 }
 
-.card i {
-    font-size: 19px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 5px;
-    color: hsl(197, 95%, 25%);
-    border-radius: 50%;
-    border: 1px solid #1f242d;
-    background: #e8dfdf;
-    transition: .5s;
-}
 
-.card i:hover {
-    transition: .5s;
-    transform: rotate(35deg);
-}
 
 .skills h1 {
     text-align: center;
