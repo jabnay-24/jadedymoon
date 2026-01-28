@@ -184,6 +184,11 @@ h1 {
     color: #000;
 }
 
+#kopa {
+    display: flex;
+    text-align: center;
+}
+
 /* --- Add this to the bottom of your CSS file --- */
 
 @media (max-width: 768px) {
@@ -279,7 +284,7 @@ h1 {
         justify-content: center;
     }
     .hire {
-        margin-right: 37px;
+        margin-right: px;
     }
 
     .home-buttons {
@@ -287,11 +292,15 @@ h1 {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin-right: 38px;
     }
+.home img {
+    position: absolute;
+    right: 140px;
+}
+    
+    
 
-    .social-icons {
-        margin-right: -36px;
-    }
 
     body {
         display: flex;
