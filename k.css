@@ -282,6 +282,17 @@ h1 {
         margin-right: 37px;
     }
 
+    .home-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-right: -36px;
+    }
+
     body {
         display: flex;
         flex-direction: column; /* Stack elements vertically */
