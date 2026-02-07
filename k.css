@@ -349,9 +349,25 @@ h1 {
         flex-direction: column;
     }
     .home img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* Ensure the parent container is the reference point */
+.container {
+    position: relative;
+    height: 100vh; /* Or whatever height you need */
+}
+
+@media screen and (max-width: 384px) {
+    .home img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* The transform moves the image back by half its own width/height */
+        transform: translate(-50%, -50%);
+        
+        /* Optional: ensures the image doesn't overflow the small screen */
+        max-width: 90%; 
+        height: auto;
+    }
+}
     }
     
 }
