@@ -273,9 +273,7 @@ h1 {
     .home-p {
         margin-left: 0;
         padding: 0 10px;
-        br {
-            display: none; 
-        }
+        
     }
 
     .home-buttons, .social-icons {
@@ -283,9 +281,7 @@ h1 {
         display: flex;
         justify-content: center;
     }
-    .hire {
-        margin-right: px;
-    }
+    
 
     .home-buttons {
         display: flex;
@@ -351,12 +347,20 @@ h1 {
 
 
 @media screen and (max-width: 384px) {
-    .home .img {
-      display: flex;
-      justify-content: center;
-      align-items: center;  
+    .home img {
+      @media screen and (max-width: 384px) {
+    img {
+        display: block;       /* Required for margin: auto to work */
+        margin-left: auto;    /* Pushes from left */
+        margin-right: auto;   /* Pushes from right */
+        margin-top: 30px;     /* Your requested top spacing */
+        margin-bottom: 0; 
+        
+        float: none;          /* Critical: Floats break centering */
+        width: 200px; 
+        position: static; 
+        border-radius: 1.5rem;
     }
-}
-    
-    
-}
+} 
+    }
+}}
