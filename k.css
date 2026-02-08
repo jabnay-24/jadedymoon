@@ -351,11 +351,10 @@ h1 {
 
 
 @media screen and (max-width: 384px) {
-    .home img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1.2rem;
+    .home .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
     }
 }
     
